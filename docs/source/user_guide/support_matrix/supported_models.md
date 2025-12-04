@@ -8,16 +8,16 @@ Get the latest info here: https://github.com/vllm-project/vllm-ascend/issues/160
 
 | Model                         | Support   | Note                                                                 | BF16 | Supported Hardware | W8A8 | Chunked Prefill | Automatic Prefix Cache | LoRA | Speculative Decoding | Async Scheduling | Tensor Parallel | Pipeline Parallel | Expert Parallel | Data Parallel | Prefill-decode Disaggregation | Piecewise AclGraph | Fullgraph AclGraph | max-model-len | MLP Weight Prefetch | Doc |
 |-------------------------------|-----------|----------------------------------------------------------------------|------|--------------------|------|-----------------|------------------------|------|----------------------|------------------|-----------------|-------------------|-----------------|---------------|-------------------------------|--------------------|--------------------|---------------|---------------------|-----|
-| DeepSeek V3/3.1               | ✅        |                                                                      |||||||||||||||||||
-| DeepSeek V3.2 EXP             | ✅        |                                                                      | ✅   | A2/A3              | ✅   | ✅              | ✅                     | ✅   | ✅                   |                  | ✅              | ✅                | ✅              | ✅            | ❌                            |                   |                    | 163840        |                     | [DeepSeek-V3.2-Exp tutorial](../../tutorials/DeepSeek-V3.2-Exp.md) |
-| DeepSeek R1                   | ✅        |                                                                      |||||||||||||||||||
+| DeepSeek V3/3.1               | ✅        |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ || ✅ || ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 240k || [DeepSeek-V3.1](../../tutorials/DeepSeek-V3.1.md) |
+| DeepSeek V3.2 EXP             | ✅        |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ | ✅ | ✅ || ✅ | ✅ | ✅ | ✅ | ❌ ||| 160k || [DeepSeek-V3.2-Exp](../../tutorials/DeepSeek-V3.2-Exp.md) |
+| DeepSeek R1                   | ✅        |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ || ✅ || ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 128k |||
 | DeepSeek Distill (Qwen/Llama) | ✅        |                                                                      |||||||||||||||||||
-| Qwen3                         | ✅        |                                                                      |||||||||||||||||||
+| Qwen3                         | ✅        |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ ||| ✅ | ✅ ||| ✅ || ✅ | ✅ | 128k |||
 | Qwen3-based                   | ✅        |                                                                      |||||||||||||||||||
-| Qwen3-Coder                   | ✅        |                                                                      | A2/A3 |✅||✅|✅|✅|||✅|✅|✅|✅||||||[Qwen3-Coder-30B-A3B tutorial](../../tutorials/Qwen3-Coder-30B-A3B.md)|
-| Qwen3-Moe                     | ✅        |                                                                      |||||||||||||||||||
-| Qwen3-Next                    | ✅        |                                                                      |||||||||||||||||||
-| Qwen2.5                       | ✅        |                                                                      |||||||||||||||||||
+| Qwen3-Coder                   | ✅        |                                                                      | ✅ | A2/A3 ||✅|✅|✅|||✅|✅|✅|✅||||||[Qwen3-Coder-30B-A3B tutorial](../../tutorials/Qwen3-Coder-30B-A3B.md)|
+| Qwen3-Moe                     | ✅        |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ |||| ✅ || ✅ | ✅ | ✅ | ✅ | ✅ ||||
+| Qwen3-Next                    | ✅        |                                                                      | ✅ | A2/A3 | ✅ |||||| ✅ ||| ✅ || ✅ | ✅ ||||
+| Qwen2.5                       | ✅        |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ |||| ✅ || ✅ | ✅ |||||||
 | Qwen2                         | ✅        |                                                                      |||||||||||||||||||
 | Qwen2-based                   | ✅        |                                                                      |||||||||||||||||||
 | QwQ-32B                       | ✅        |                                                                      |||||||||||||||||||
@@ -57,7 +57,7 @@ Get the latest info here: https://github.com/vllm-project/vllm-ascend/issues/160
 | Model                          | Support       | Note                                                                 | BF16 | Supported Hardware | W8A8 | Chunked Prefill | Automatic Prefix Cache | LoRA | Speculative Decoding | Async Scheduling | Tensor Parallel | Pipeline Parallel | Expert Parallel | Data Parallel | Prefill-decode Disaggregation | Piecewise AclGraph | Fullgraph AclGraph | max-model-len | MLP Weight Prefetch | Doc |
 |--------------------------------|---------------|----------------------------------------------------------------------|------|--------------------|------|-----------------|------------------------|------|----------------------|------------------|-----------------|-------------------|-----------------|---------------|-------------------------------|--------------------|--------------------|---------------|---------------------|-----|
 | Qwen2-VL                       | ✅            |                                                                      |||||||||||||||||||
-| Qwen2.5-VL                     | ✅            |                                                                      |||||||||||||||||||
+| Qwen2.5-VL                     | ✅            |                                                                      | ✅ | A2/A3 | ✅ | ✅ | ✅ ||| ✅ | ✅ |||| ✅ | ✅ | ✅ | 30k |||
 | Qwen3-VL                       | ✅            |                                                                      |||||||||||||||||||
 | Qwen3-VL-MOE                   | ✅            |                                                                      |||||||||||||||||||
 | Qwen2.5-Omni                   | ✅            | [1760](https://github.com/vllm-project/vllm-ascend/issues/1760)      |||||||||||||||||||
